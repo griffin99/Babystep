@@ -1,10 +1,36 @@
 <html>
+    <head>
+        <title>Adrian's Todo App</title>
+    </head>
     <body>
         <button>Press me</button>
+        <div>Trouble shooting</div>
+        <div>Wash Athena</div>
+        <div>Wash car</div>
+        <div>Learn coding</div>
         <script>
             let todo1 = 'Wash Athena';
             let todo2 = 'Wash car';
             let todo3 = 'Learn coding';
+            console.log(todo1)
+            function addTodo() {
+                let element = document.createElement('div');
+                element.innerText = todo1;
+                document.body.appendChild(element);
+            }
+
+            addTodo();
+
+            element = document.createElement('div');
+            element.innerText = todo2;
+            document.body.appendChild(element);
+
+            element = document.createElement('div');
+            element.innerText = todo3;
+            document.body.appendChild(element);
+
+            console.log(todo1)
+
         </script>
     </body>
 </html>
